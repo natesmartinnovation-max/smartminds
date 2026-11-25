@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F4F3ED">
+<meta name="robots" content="noindex">
+<title>Página não encontrada · Smart Minds</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* VOICE calm, a little playful: the conversation got lost
+   IDEA the Diálogo mark pulled apart: the two drops no longer touch
+   PICTURE the brand photo, out of focus, behind a glass panel; drops drift and reunite on hover
+   COLOUR linen ground, forest panel, limão accent
+   TYPE Host Grotesk + Instrument Serif italic second line
+   LAYOUT one centred card on desktop; stacked on phone */
+:root{color-scheme:light;--forest:#131A0C;--olive:#2C3913;--olive7:#45561F;--moss3:#B7BF9A;--lime:#DCF26B;--lime5:#B9D43A;--linen:#F4F3ED;--ease:cubic-bezier(.2,.7,.1,1)}
+*{box-sizing:border-box;min-width:0}
+html,body{height:100%}
+body{margin:0;background:var(--linen);color:var(--forest);font:16px/1.55 'Host Grotesk','Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+::selection{background:#DCF26B;color:#131A0C}
+:focus-visible{outline:3px solid var(--lime5);outline-offset:3px;border-radius:12px}
+.page{min-height:100%;padding:10px;display:flex}
+.scene{position:relative;flex:1;border-radius:30px;overflow:hidden;display:flex;flex-direction:column;background:#1a1712}
+.scene img{position:absolute;inset:-30px;width:calc(100% + 60px);height:calc(100% + 60px);object-fit:cover;object-position:62% 30%;filter:blur(22px) saturate(110%);transform:scale(1.06)}
+.scene::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,26,12,.35),rgba(19,26,12,.75))}
+header{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(20px,3vw,40px)}
+.logo{display:flex;align-items:center;gap:9px;color:#fff;text-decoration:none}
+.logo svg{width:30px;height:30px}
+.wm{display:flex;align-items:baseline;gap:.22em;font-size:22px;line-height:1;letter-spacing:-.045em}
+.wm b{font-weight:700}.wm span{font-weight:300}
+.mid{position:relative;z-index:2;flex:1;display:grid;place-items:center;padding:20px clamp(16px,3vw,40px) 40px}
+.card{width:min(100%,880px);border-radius:28px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,4vw,56px);align-items:center;color:#fff;background:rgba(19,26,12,.42);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(20px) saturate(130%);-webkit-backdrop-filter:blur(20px) saturate(130%);animation:in 1s var(--ease) both}
+@keyframes in{from{opacity:0;transform:translateY(24px) scale(.98)}}
+.mark{aspect-ratio:1;position:relative;cursor:pointer}
+.mark svg{width:100%;height:100%;overflow:visible}
+.mark .a{transform:translate(-7px,-7px) rotate(-8deg);transform-origin:13px 13px;transition:transform 1s var(--ease);animation:fa 5s ease-in-out infinite}
+.mark .b{transform:translate(7px,7px) rotate(8deg);transform-origin:35px 35px;transition:transform 1s var(--ease);animation:fb 5s ease-in-out infinite}
+.mark:hover .a,.mark:focus-visible .a,.mark.met .a{animation:none;transform:none}
+.mark:hover .b,.mark:focus-visible .b,.mark.met .b{animation:none;transform:none}
+@keyframes fa{50%{transform:translate(-9px,-5px) rotate(-12deg)}}
+@keyframes fb{50%{transform:translate(9px,5px) rotate(12deg)}}
+.code{font-size:14px;color:var(--moss3);margin:0 0 10px}
+h1{margin:0 0 16px;font-weight:400;font-size:clamp(38px,5vw,60px);line-height:1;letter-spacing:-.045em}
+h1 em{display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;letter-spacing:-.01em;font-size:1.08em;color:var(--lime)}
+p.t{margin:0 0 28px;color:#DCE2C4;max-width:440px}
+.ctas{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 22px 0 26px;border-radius:999px;font-weight:500;text-decoration:none;position:relative;overflow:hidden;isolation:isolate;transition:transform .4s var(--ease)}
+.btn::before{content:"";position:absolute;inset:0;background:#fff;transform:translateY(101%);transition:transform .45s var(--ease);z-index:-1}
+.btn:hover::before{transform:none}
+.btn.lime{background:var(--lime);color:var(--forest)}
+.btn.glass{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.3);padding:0 24px}
+.btn.glass::before{background:rgba(255,255,255,.22)}
+.ar{display:grid;place-items:center;width:26px;height:26px;border-radius:999px;background:rgba(19,26,12,.1);transition:transform .45s var(--ease)}
+.btn:hover .ar{transform:translateX(4px) rotate(-45deg)}
+.links{display:flex;flex-wrap:wrap;gap:6px;margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16)}
+.links span{width:100%;font-size:14px;color:var(--moss3);margin-bottom:4px}
+.links a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;color:#fff;text-decoration:none;font-size:14px;border:1px solid rgba(255,255,255,.2);transition:background .3s,color .3s}
+.links a:hover{background:var(--lime);color:var(--forest);border-color:var(--lime)}
+@media (max-width:700px){.card{grid-template-columns:minmax(0,1fr)}.mark{max-width:150px}.scene{border-radius:24px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="page">
+<main class="scene">
+<img src="/hero.jpg" alt="">
+<header>
+<a href="/" class="logo" aria-label="Smart Minds, início">
+<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 24L24 13A11 11 0 1 0 13 24Z" fill="#fff"/><path d="M24 24L24 35A11 11 0 1 0 35 24Z" fill="#DCF26B"/></svg>
+<span class="wm"><b>Smart</b><span>Minds</span></span>
+</a>
+<a href="/#contato" class="btn lime" style="height:44px;padding:0 18px;font-size:14px">Fale com a gente</a>
+</header>
+<div class="mid">
+<section class="card" aria-labelledby="t">
+<div class="mark" id="mark" tabindex="0" role="img" aria-label="As duas gotas do símbolo Smart Minds, separadas; passe o mouse para reuni-las">
+<svg viewBox="0 0 48 48"><path class="a" d="M24 24L24 13A11 11 0 1 0 13 24Z" fill="#FFFFFF"/><path class="b" d="M24 24L24 35A11 11 0 1 0 35 24Z" fill="#DCF26B"/></svg>
+</div>
+<div>
+<p class="code">Erro 404</p>
+<h1 id="t">Essa conversa <em>se perdeu no caminho</em></h1>
+<p class="t">A página que você procurou não existe ou mudou de lugar. Vamos retomar de onde faz sentido.</p>
+<div class="ctas">
+<a href="/" class="btn lime">Voltar ao início <span class="ar"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+<a href="/#contato" class="btn glass">Falar com a equipe</a>
+</div>
+<nav class="links" aria-label="Atalhos">
+<span>Ou vá direto para</span>
+<a href="/#metodo">Método</a><a href="/#solucoes">Soluções</a><a href="/#imersao">Imersão</a><a href="/#faq">Perguntas</a>
+</nav>
+</div>
+</section>
+</div>
+</main>
+</div>
+<script>
+{const m=document.getElementById('mark');m.addEventListener('click',()=>m.classList.toggle('met'));m.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();m.classList.toggle('met')}})}
+</script>
+</body>
+</html>
